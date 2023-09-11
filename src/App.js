@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import MyHeader from "./myHeader";
+import MyFooter from "./myFooter";
 
 function App() {
+  let name = "김승현";
+
   return (
     <div className="App">
+      <MyHeader />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h2>hi {name} </h2>
       </header>
+      <MyFooter />
     </div>
   );
 }
